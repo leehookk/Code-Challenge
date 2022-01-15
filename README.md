@@ -8,4 +8,4 @@
 #### 4. Build and Run this project
 #### 5. Type "localhost:8080" in your default browser
 
-## You can also check the "demo" folder to see the demo
+## You can also check the demo.gif to check the demo of the system
