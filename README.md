@@ -1,7 +1,7 @@
 ## Author: Hao Li  
 ## Email: hal***@****.edu
 
-You can also check the file "demo.mov" to check the demo of the system
+You can check the file "demo.mov" to check the demo of the system
 
 ## How to run:
 #### 1. download or clone the repository
