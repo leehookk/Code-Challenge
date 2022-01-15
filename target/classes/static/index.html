@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<title>Inventory Tracking System</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="index.css" rel="stylesheet">
+
+	<style>
+
+		table{
+			height:250px;
+		}
+		th{
+			width: 50%;
+		}
+
+		tbody{
+			overflow-y: scroll;
+			display: block; height: 500px; overflow: auto; width: 100%
+
+		}
+
+	</style>
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-mynav">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Inventory Tracking System</a>
+	</div>
+</nav>
+
+
+<div class="container">
+
+	<hr>
+	<div>
+		<table id="myTable" class="table table-responsive">
+			<tbody>
+			<tr>
+				<th scope="col">Id</th>
+				<th scope="col">Name</th>
+				<th scope="col">Number</th>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<hr>
+
+	<div>
+		<h6>Create Product</h6>
+		<form id="insertForm" method="POST" action="">
+			<input type="text" id="productName" name="productName" placeholder="Name">
+			<input type="number" id="quantity" name="quantity" placeholder="Number">
+			<input type="submit" value="Create" class="btn btn-success">
+		</form>
+		<div id="insResult"></div>
+	</div>
+	<hr>
+	<div>
+		<h6>Update Product</h6>
+		<input type="number" id="updateProductId" name="productId" placeholder="Id to update">
+		<input type="text" id="updateProductName" name="productName" placeholder="Name">
+		<input type="number" id="updateQuantity" name="quantity" placeholder="Number">
+		<button id="updateBut" value="Update" class="btn btn-success" >Update</button>
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h6>Delete Existing Product</h6>
+		<input type="number" id="delProductId" name="productId" placeholder="Id to delete"><button id="deleteBut" value="Delete" class="btn btn-success">Delete</button>
+		<div id="delResult"></div>
+	</div>
+
+	<div>
+		<a class="btn btn-success" href="/export">Export as .csv</a>
+	</div>
+
+</div>
+
+</body>
+
+</html>

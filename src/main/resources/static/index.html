@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<title>Shopify Backend Intern Challenge</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<style>
+		th,	td {
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	
+
+	<div class="container">
+		<br>
+		<h2>Shopify Backend Intern Challenge</h2>
+		<br>
+	<div>
+		<h6>Insert New Inventory Product:</h6>
+		<form id="insertForm" method="POST" action="">
+			<input type="text" id="productName" name="productName" placeholder="Product Name"><br>
+			<input type="number" id="quantity" name="quantity" placeholder="Product Quantity"><br>
+			<input type="submit" value="Create New"> Click to create new Inventory Product
+		</form>
+		<div id="insResult"></div>
+	</div>
+	<hr>
+	<div>
+		<h6>Update Existing Product</h6>
+		<input type="number" id="updateProductId" name="productId" placeholder="Product Id to Update"><br>
+		<input type="text" id="updateProductName" name="productName" placeholder="New Product Name"><br>
+		<input type="number" id="updateQuantity" name="quantity" placeholder="New Product Quantity"><br>
+		<div id="updateResult"></div>
+		<button id="updateBut" value="Update">Update</button> Click to Update Inventory Product with Given Id
+			</form>
+	</div>
+	<hr>
+	<div>
+		<h6>Delete Existing Product</h6>
+		<input type="number" id="delProductId" name="productId" placeholder="Product Id to Delete"><button id="deleteBut" value="Delete">Delete</button>
+		<div id="delResult"></div>
+		
+
+	</div>
+	<hr>
+	<div>
+		<h5>All Inventory Items:</h5>
+		<a class="button" href="/export">Export to CSV</a>
+		<table id="myTable">
+			<tbody>
+				<tr>
+					<th>Id</th>
+					<th>Product Name</th>
+					<th>Quantity</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<hr>
+</div>
+
+</body>
+
+</html>
