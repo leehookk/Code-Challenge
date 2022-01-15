@@ -1,7 +1,7 @@
 ## Author: Hao Li  
 ## Email: hal***@****.edu
 
-You can check the file "demo.mov" to see the demo of the system
+You can click the file "demo.mov", and click "view row" to download and see the demo of the system
 
 ## How to run:
 #### 1. download or clone the repository
